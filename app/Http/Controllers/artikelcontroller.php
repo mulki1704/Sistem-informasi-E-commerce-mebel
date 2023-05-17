@@ -2,10 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Models\artikel;
+use Illuminate\Http\Request;
 use Illuminate\Support\Str;
-use \Cviebrock\EloquentSluggable\Services\SlugService;
 
 class artikelcontroller extends Controller
 {
@@ -23,14 +22,14 @@ class artikelcontroller extends Controller
     {
         //
         $dataartikel = artikel::latest();
-        if(request('search')){
-            $dataartikel->where('title','like','%'.request('search'). '%')
-                       ->orWhere('body','like','%'.request('search').'%')
-                       ->orWhere('subtitle','like','%'.request('search').'%');
+        if (request('search')) {
+            $dataartikel->where('title', 'like', '%' . request('search') . '%')
+                ->orWhere('body', 'like', '%' . request('search') . '%')
+                ->orWhere('subtitle', 'like', '%' . request('search') . '%');
         }
-        return view('backend.artikel.index',[
+        return view('backend.artikel.index', [
             'title' => 'Artikel',
-            'data' => $dataartikel->get()
+            'data' => $dataartikel->get(),
         ]);
     }
 
@@ -42,8 +41,8 @@ class artikelcontroller extends Controller
     public function create()
     {
         //
-        return view('backend.artikel.create',[
-            'title' => 'Create'
+        return view('backend.artikel.create', [
+            'title' => 'Create',
         ]);
     }
 
@@ -63,14 +62,11 @@ class artikelcontroller extends Controller
 
         ]);
 
-        
-
         $artikels = new artikel();
         $artikels->title = $request->title;
         $artikels->subtitle = $request->subtitle;
         $artikels->body = $request->body;
         $artikels->excerpt = Str::limit(strip_tags($request->body), 300, '...');
-
 
         $artikels->save();
 
@@ -87,8 +83,8 @@ class artikelcontroller extends Controller
     {
         //
         $data = artikel::findOrFail($id);
-        return view('backend.artikel.show', compact('data'),[  
-            'title' => 'Show'
+        return view('backend.artikel.show', compact('data'), [
+            'title' => 'Show',
         ]);
     }
 
@@ -102,8 +98,8 @@ class artikelcontroller extends Controller
     {
         //
         $data = artikel::findOrFail($id);
-        return view('backend.artikel.edit', compact('data'),[
-            'title' => 'Edit'
+        return view('backend.artikel.edit', compact('data'), [
+            'title' => 'Edit',
         ]);
     }
 
@@ -124,15 +120,12 @@ class artikelcontroller extends Controller
 
         ]);
 
-        
-
         $artikels = artikel::findOrFail($id);
         $artikels->title = $request->title;
         $artikels->slug = Str::slug($data['title']);
         $artikels->subtitle = $request->subtitle;
         $artikels->body = $request->body;
         $artikels->excerpt = Str::limit(strip_tags($request->body), 200, '...');
-
 
         $artikels->save();
 
@@ -150,7 +143,8 @@ class artikelcontroller extends Controller
         //
         $artikels = artikel::findOrFail($id);
         $artikels->delete();
-        return redirect()->route('backend.artikel.index')
+        return redirect('/dashboard/artikel')
             ->with('success', 'Data berhasil dihapus!');
     }
 }
+

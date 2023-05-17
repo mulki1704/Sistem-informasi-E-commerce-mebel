@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg fixed-top navbar-dark py-3">
   <div class="container-fluid nav-overlay" data-aos="zoom-in">
-    <a class="navbar-brand" href="#"><img src="{{asset('ASET/x1/logo.png')}}" alt="Topisanimal" class="d-inline-block  "></a>
+    <a class="navbar-brand" href="#">mebel.id</a>
     <button class="navbar-toggler menu-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -14,15 +14,14 @@
                 <a class="nav-link  {{ ($title === 'Tentang Kami') ? 'active' : '' }}" href="/tentangkami">TENTANG</a>
             </li>
             <li class="nav-item ms-4" data-aos="zoom-in" data-aos-delay="200">
-                <a class="nav-link  {{ ($title === 'Berita') ? 'active' : '' }}" href="/berita">BERITA</a>
+                <a class="nav-link  {{ ($title === 'Berita') ? 'active' : '' }}" href="/artikel">BERITA</a>
             </li>
             <li class="nav-item ms-4" data-aos="zoom-in" data-aos-delay="300">
-                <a class="nav-link  {{ ($title === 'Galeri') ? 'active' : '' }}" href="/galeri">GALERI</a>
+                <a class="nav-link  {{ ($title === 'Product') ? 'active' : '' }}" href="/product">PRODUCT</a>
             </li>
             <li class="nav-item ms-4" data-aos="zoom-in" data-aos-delay="300">
                 <a class="nav-link  {{ ($title === 'Kontak') ? 'active' : '' }}" href="/kontak">KONTAK</a>
-            </li>
-                
+            </li> 
         </ul>
     </div>
   </div>

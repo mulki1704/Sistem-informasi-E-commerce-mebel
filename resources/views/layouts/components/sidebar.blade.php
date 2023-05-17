@@ -10,7 +10,7 @@
                 <h4 class="nav-link text-light">
                     <i class="bi bi-grid-1x2-fill"></i>
                     <b>
-                        <p class="fs-3 fw-bold">Dashboard</p>
+                        <p class="fs-3 fw-bold">Mebel.id</p>
                     </b>
                 </h4>
             </li>
@@ -27,12 +27,19 @@
             <li class="nav-item menu-open ">
                 <a href="" class="nav-link bg-dark">
                     <i class="nav-icon fas fa-tachometer-alt"></i>
-                    <p>
-                        Data
+                    {{-- <p>
+                        Dashboard
                         <i class="right fas fa-angle-left"></i>
-                    </p>
+                    </p> --}}
                 </a>
                 <ul class="nav nav-treeview">
+                    <li class="nav-item ml-1">
+                        <a href="../../../dashboard"
+                            class="nav-link {{ ($title === 'dashboard') ? 'active' : '' }}">
+                            <i class="bi bi-card-heading nav-icon"></i>
+                            <p>dashboard</p>
+                        </a>
+                    </li>
                     <li class="nav-item ml-1">
                         <a href="../../../dashboard/artikel"
                             class="nav-link {{ ($title === 'Artikel') ? 'active' : '' }}">
@@ -48,17 +55,10 @@
                         </a>
                     </li>
                     <li class="nav-item ml-1">
-                        <a href="../../../dashboard/visimisi"
-                            class="nav-link {{ ($title === 'Visi Misi') ? 'active' : '' }}">
+                        <a href="{{ route('product.index')}}"
+                            class="nav-link {{ ($title === 'Product') ? 'active' : '' }}">
                             <i class="bi bi-binoculars-fill card-heading nav-icon"></i>
-                            <p>Visi Misi</p>
-                        </a>
-                    </li>
-                    <li class="nav-item ml-1">
-                        <a href="../../../dashboard/galeri"
-                            class="nav-link {{ ($title === 'Galeri') ? 'active' : '' }}">
-                            <i class="bi bi-image-fill card-heading nav-icon"></i>
-                            <p>Galeri</p>
+                            <p>Product</p>
                         </a>
                     </li>
                     <li class="nav-item ml-1">

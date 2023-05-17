@@ -21,27 +21,21 @@
                 <div class="col-md-6 col-lg-6">
                     <div class="show-img" data-aos-duration="1100" data-aos-anchor-placement="top-bottom"
                         data-aos="fade-up">
-                        <a href="{{asset('ASET/x1/gajah.png')}}" data-lightbox="roadtrip">
-                            <img src="{{asset('ASET/x1/gajah.png')}}" alt="" class="w-100" height="465px">
+                        <a href="{{asset('ASET/kayu/jati4.jfif')}}" data-lightbox="roadtrip">
+                            <img src="{{asset('ASET/kayu/jati4.jfif')}}" alt="" class="w-100" height="465px">
                         </a>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-6 pt-small-2">
                     <div class="show-img" data-aos-duration="1100" data-aos-anchor-placement="top-bottom"
                         data-aos="fade-up" data-aos-delay="200">
-                        <a href="{{asset('ASET/x1/badak.png')}}" data-lightbox="roadtrip">
-                            <img src="{{asset('ASET/x1/badak.png')}}" alt="" class="w-100 " height="220px">
+                        <a href="{{asset('ASET/kayu/jati5.jfif')}}" data-lightbox="roadtrip">
+                            <img src="{{asset('ASET/kayu/jati5.jfif')}}" alt="" class="w-100 " height="220px">
                         </a>
                     </div>
+               
 
                     <br>
-
-                    <div class="show-img" data-aos-duration="1100" data-aos-anchor-placement="top-bottom"
-                        data-aos="fade-up" data-aos-delay="4 00">
-                        <a href="{{asset('ASET/x1/kudanil.png')}}" data-lightbox="roadtrip">
-                            <img src="{{asset('ASET/x1/kudanil.png')}}" alt="" class="w-100" height="220px">
-                        </a>
-                    </div>
                 </div>
             </div>
         </div>
@@ -54,7 +48,7 @@
             </p>
             <p data-aos-duration="1100" data-aos-anchor-placement="top-bottom" data-aos="fade-up" data-aos-delay="400">
                 {!!$dataartikel->excerpt!!}</p>
-            <a href="/Showartikel/{{$dataartikel['slug']}}" style="--clr:#009900" class="button-outline btn "
+            <a href="/Showartikel/{{$dataartikel['slug']}}" style="--clr:#755207" class="button-outline btn "
                 data-aos-duration="1100" data-aos-anchor-placement="top-bottom" data-aos="fade-up" data-aos-delay="600">
                 Lihat Selengkapnya<i class="bi bi-arrow-right"></i></a>
         </div>
@@ -65,12 +59,12 @@
 <div class="content-overlay pb-5">
     <div class="row" data-aos-duration="1100" data-aos-anchor-placement="top-bottom" data-aos="fade-up">
         <div class="col-md-12 col-lg-6">
-            <h1>Berita Lainnya</h1>
+            <h1>berita Lainnya</h1>
         </div>
         <div class="col-md-12 col-lg-6">
-            <form action="/berita/#search">
+            <form action="/artikel/#search">
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control form-control-lg" placeholder="Search..." name="search"
+                    <input type="text" class="form-control " placeholder="Search..." name="search"
                         value="{{ request('search') }}" id="search">
                     <button class="btn btn-success" type="submit">Search</button>
                 </div>
@@ -104,7 +98,7 @@
         @endforeach
 
         @else
-        <p class="text-center fs-4" data-aos="zoom-in">Berita Tidak Ada.</p>
+        <p class="text-center fs-4" data-aos="zoom-in">berita Tidak Ada.</p>
         @endif
 
     </div>

@@ -75,7 +75,7 @@
                                     @endforeach
                                 </tbody>
                                 @else
-                                <h4 class="text-center">Berita Tidak Ada.</h4>
+                                <h4 class="text-center">kontak Tidak Ada.</h4>
                                 @endif
                             </table>
                         </div>

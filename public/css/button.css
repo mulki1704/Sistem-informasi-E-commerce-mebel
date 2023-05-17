@@ -1,8 +1,9 @@
 .button-outline{
     display: inline-block;
-    color: #009900;
+    /* warna text */
+    color: #755207;
     text-decoration: none;
-    border: 2px solid #009900;
+    border: 2px solid #755207;
     text-transform: uppercase;
     padding: 10px 30px;
     transition: 0.5s;
@@ -11,7 +12,8 @@
 }
 
 .button-outline:hover{
-    background: #009900;
+    /* warna tombol */
+    background: #755207;
     transform: scale(1.1);
     transition: 0.4s ;
     color: white;
@@ -27,7 +29,7 @@
 
 .button-solid{
     color: #ffffff;
-    background: #009900;
+    background: #755207;
     text-decoration: none;
     text-transform: uppercase;
     padding: 10px 30px;
@@ -37,7 +39,7 @@
 }
 
 .button-solid:hover{
-    background: #008b00;
+    background: #755207;
     color: white;
     box-shadow: 0 0 20px rgba(131, 131, 131, 0.726);
     text-align: center;
@@ -45,7 +47,7 @@
 
 .button-slide{
     color: #ffffff;
-    background: #009900;
+    background: #755207;
     padding: auto;
     transition: 0.5s;
     border-radius: 10px;
@@ -55,7 +57,7 @@
 .button-slide:hover{
     color: rgb(255, 255, 255);
     box-shadow: 0 0 25px #0000004d;
-    background: #006b00;
+    background: #755207;
     text-align: center;
 }
 
@@ -71,7 +73,7 @@
     left: 5%;
     color: rgb(255, 255, 255);
     cursor: pointer;
-    background-color: #009900;
+    background-color: #755207;
     z-index: 99;
     border-radius: 6px;
     opacity: 0.6;
@@ -79,7 +81,7 @@
 }
 
 .prev:hover{
-    background-color: #009900;
+    background-color: #755207;
     color: #ffffff;
     box-shadow: 0 0 15px rgba(112, 112, 112, 0.359);
     opacity: 1;
@@ -88,7 +90,7 @@
 
     transform: scale(0.80, 0.80);
     transition: 0.2s ;
-    background-color: #009900;
+    background-color: #755207;
     color: #ffffff;
 }
 
@@ -98,13 +100,13 @@
     right: 5%;
     color: white;
     cursor: pointer;
-    background-color: #009900;
+    background-color: #755207;
     z-index: 99;
     border-radius: 6px;
     opacity: 0.6;
 }
 .next:hover{
-    background-color: #009900;
+    background-color: #755207;
     color: #ffffff;
     box-shadow: 0 0 15px rgba(112, 112, 112, 0.359);
     opacity: 1;
@@ -113,7 +115,7 @@
 
     transform: scale(0.80, 0.80);
     transition: 0.2s ;
-    background-color: #009900;
+    background-color: #755207;
     color: #ffffff;
 }
 
@@ -123,7 +125,7 @@
     position: fixed;
     right: 3%;
     bottom: 3%;
-    background: #009900;
+    background: #755207;
     border-radius: 100%;
     text-align: center;
     animation: up 1.5s ease;
@@ -134,7 +136,7 @@
 }
 
 .button-circle:hover{
-    background: #008b00;
+    background: #755207;
     color: white;
     box-shadow: 0 0 20px rgba(131, 131, 131, 0.726);
     text-align: center;

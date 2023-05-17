@@ -37,16 +37,16 @@
                     <div class="col-sm-6 col-md-6 col-lg-6 ">
                         <div class="show-img" data-aos-duration="1100" data-aos-anchor-placement="top-bottom"
                             data-aos="fade-up">
-                            <a href="{{ asset('ASET/x1/kadal.png') }}" data-lightbox="roadtrip">
-                                <img src="{{ asset('ASET/x1/kadal.png') }}" alt="" class="w-100">
+                            <a href="{{ asset('ASET/kayu/jati1.jpg') }}" data-lightbox="roadtrip">
+                                <img src="{{ asset('ASET/kayu/jati1.jpg') }}" alt="" class="w-100">
                             </a>
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-6 pt-small-2">
                         <div class="show-img" data-aos-duration="1100" data-aos-anchor-placement="top-bottom"
                             data-aos="fade-up" data-aos-delay="200">
-                            <a href="{{ asset('ASET/x1/ou.png') }}" data-lightbox="roadtrip">
-                                <img src="{{ asset('ASET/x1/ou.png') }}" alt="" class="w-100">
+                            <a href="{{ asset('ASET/kain/oscar1.jfif') }}" data-lightbox="roadtrip">
+                                <img src="{{ asset('ASET/kain/oscar1.jfif') }}" alt="" class="w-100">
                             </a>
                         </div>
                     </div>
@@ -54,8 +54,8 @@
                     <div class="col-sm-12 col-md-12  col-lg-12 pt-4 ">
                         <div class="show-img" data-aos-duration="1100" data-aos-anchor-placement="top-bottom"
                             data-aos="fade-up" data-aos-delay="400">
-                            <a href="{{ asset('ASET/x1/hs.png') }}" data-lightbox="roadtrip">
-                                <img src="{{ asset('ASET/x1/hs.png') }}" alt="" class="w-100">
+                            <a href="{{ asset('ASET/barang/barang1.jfif') }}" data-lightbox="roadtrip">
+                                <img src="{{ asset('ASET/barang/barang1.jfif') }}" alt="" class="w-100">
                             </a>
                         </div>
                     </div>

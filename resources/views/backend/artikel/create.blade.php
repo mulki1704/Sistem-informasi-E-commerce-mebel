@@ -62,7 +62,7 @@
 
 
                         <div class="d-grip gap-2 mb-2">
-                            <button class="button-solid btn btn-lg btn-block" style="--clr:#009900"
+                            <button class="button-solid btn btn-lg btn-block" style="--clr:#755207"
                                 type="submit">Simpan</button>
                         </div>
                     </div>

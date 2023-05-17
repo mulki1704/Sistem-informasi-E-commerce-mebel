@@ -3,12 +3,12 @@ html{
 }
 
 .bg-a{
-    background-color: #00a300 !important;
+    background-color: #755207 !important;
 }
 
 @media only screen and(max-width:600px){
     .navbar-collapse{
-        background-color: #009900 !important;
+        background-color: #755207 !important;
     }
 }
 
@@ -42,7 +42,7 @@ h1 {
 .card-show:hover{
     color: rgb(255, 255, 255);
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.295);
-    background: #009900;
+    background: #755207;
     text-align: center;
 }
 
@@ -57,12 +57,12 @@ h1 {
 
 
 .bg-green{
-    background: #009900;
+    background: #755207;
     color: #ffffff;
 }
 
 .text-green{
-    color: #009900;
+    color: #755207;
 }
 
 .show-img{
@@ -124,7 +124,7 @@ h1 {
     width: 60px;
     height: 60px;
     background-color: #ffffff;
-    color: #009900;
+    color: #755207;
     box-shadow: 0 0  15px #4e4e4e80;
 }
 

@@ -15,10 +15,6 @@
 
 <!-- map -->
 <div class="content-overlay py-5" data-aos-duration="1100" data-aos-anchor-placement="top-bottom" data-aos="fade-up">
-    <iframe
-        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15842.23522712826!2d107.6639873!3d-6.9432114!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5f5160f6c9796e4b!2sCyberLabs%20-%20Konsultan%20Digital%20Marketing%20%2FPengembangan%20Website%2FIOS!5e0!3m2!1sid!2sid!4v1667891197276!5m2!1sid!2sid"
-        width="1088" height="286" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade" class="img-fluid w-100" alt="{{asset('ASET/x1/map.png')}}"></iframe>
 
 
 
@@ -115,14 +111,14 @@
                 <div class="btn btn-outline-light text-dark text-center d-flex justify-item-center w-100">
                     <div class="card-body py-3 pb-3">
                         <button class="btn rounded-circle"
-                            style="background-color: #009900; color:white; width:60px; height:60px;"><i
+                            style="background-color: #755207; color:white; width:60px; height:60px;"><i
                                 class="bi bi-envelope h4"></i></button>
                         <div class="card-title">
                             <p><b>Email</b>
                             </p>
                         </div>
                         <div class="card-item ">
-                            <p>Tropisanimal@gmail.com
+                            <p>mebelid@gmail.com
                             </p>
                         </div>
                     </div>
@@ -134,7 +130,7 @@
                 <div class="btn btn-outline-light text-dark text-center d-flex justify-item-center w-100">
                     <div class="card-body py-3 pb-3">
                         <button class="btn rounded-circle"
-                            style="background-color: #009900; color:white; width:60px; height:60px;"><i
+                            style="background-color: #755207; color:white; width:60px; height:60px;"><i
                                 class="bi bi-telephone h4"></i></button>
                         <div class="card-title">
                             <p><b>Phone</b>
@@ -148,12 +144,12 @@
             </a>
         </div>
         <div class="col-sm-4 col-md-4 col-lg-4" data-aos-duration="1100" data-aos-anchor-placement="top-bottom" data-aos="fade-up" data-aos-delay="400">
-            <a href="https://www.google.com/maps/place/CyberLabs+-+Konsultan+Digital+Marketing+%2FPengembangan+Website%2FIOS/@-6.9432114,107.6639873,15z/data=!4m5!3m4!1s0x0:0x5f5160f6c9796e4b!8m2!3d-6.9432114!4d107.6639873"
+            <a href="https://www.google.co.id/maps/place/mebel/@-6.9719333,107.6035169,19.63z/data=!4m15!1m8!3m7!1s0x2e68e91e77d0c873:0x7703261a85b3491b!2sCiguriang+Hilir,+Cangkuang+Wetan,+Kec.+Dayeuhkolot,+Kabupaten+Bandung,+Jawa+Barat+40238!3b1!8m2!3d-6.9726438!4d107.6035846!16s%2Fg%2F11b6b5rr6f!3m5!1s0x2e68e960a300fc53:0x9f6c7608277b4c2f!8m2!3d-6.9716853!4d107.6038099!16s%2Fg%2F11k9s27fxs"
                 class="text-decoration-none text-white">
                 <div class="btn btn-outline-light text-dark text-center d-flex justify-item-center w-100">
                     <div class="card-body py-3 pb-3">
                         <button class="btn rounded-circle"
-                            style="background-color: #009900; color:white; width:60px; height:60px;"><i
+                            style="background-color: #755207; color:white; width:60px; height:60px;"><i
                                 class="bi bi-geo-alt h4"></i></button>
                         <div class="card-title">
                             <p><b>Location</b>

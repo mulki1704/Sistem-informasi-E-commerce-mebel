@@ -12,6 +12,7 @@ use App\Http\Controllers\blogartikelcontroller;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\kontakcontroller;
 use App\Http\Controllers\Kontak2Controller;
+use App\Http\Controllers\Productcontroller;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,15 +35,15 @@ Route::get('/main', function () {
 });
 
 route::get('/', [HomeController::class, 'home']); 
-route::get('/berita', [HomeController::class, 'berita']); 
+route::get('/artikel', [HomeController::class, 'berita']); 
 route::get('/tentangkami', [HomeController::class, 'tentangkami']); 
-route::get('/galeri', [HomeController::class, 'galeri']); 
+route::get('/product', [Productcontroller::class, 'product']); 
 route::resource('/kontak', kontakcontroller::class); 
 route::get('/Showberita/{berita:slug}', [HomeController::class, 'showberita']); 
 route::get('/Showartikel/{artikel:slug}', [HomeController::class, 'showartikel']); 
+route::get('/Showproduct/{product:slug}', [HomeController::class, 'showproduct'])-> name('showproduct'); 
 
 
-route::get('/dashboard/profile', [logincontroller::class, 'profile'])->middleware('auth');
 route::get('/login', [logincontroller::class, 'index'])->middleware('guest')->name('login');
 route::post('/login', [logincontroller::class, 'authenticate']);
 // route::get('/register', [registercontroller::class, 'index'])->middleware('guest')->name('register');
@@ -54,8 +55,8 @@ route::get('/dashboard', [dashboard::class, 'index'])->middleware('auth');
 Route::resource('/dashboard/artikel', artikelcontroller::class)->middleware('auth');
 Route::resource('/dashboard/visimisi', visimisicontroller::class)->middleware('auth');
 Route::resource('/dashboard/berita', beritacontroller::class)->middleware('auth');
-Route::resource('/dashboard/galeri', galericontroller::class)->middleware('auth');
 Route::resource('/dashboard/kontaks', Kontak2Controller::class)->middleware('auth');
+Route::resource('/dashboard/product', Productcontroller::class)->middleware('auth');
 
 route::group(['prefix' => 'admin', 'middleware' => ['auth', 'isAdmin']],function(){
 ;

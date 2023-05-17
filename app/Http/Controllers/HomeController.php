@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\artikel;
 use App\Models\berita;
-use App\Models\galeri;
+use App\Models\Product;
 use App\Models\visimisi;
 
 class HomeController extends Controller
@@ -32,7 +32,6 @@ class HomeController extends Controller
         return view('frontend.home',[
             'title' => 'Home',
             'databerita' => $databerita->paginate(6)->withQueryString(),
-            'datagaleri' => galeri::all(),
             'dataartikel' => artikel::find(1)
              
         ]);
@@ -58,15 +57,7 @@ class HomeController extends Controller
         return view('frontend.tentangkami',[
             'title' => 'Tentang Kami',
             'datavisimisi' => visimisi::all(),
-            'dataartikel' => artikel::find(3)
-        ]);
-    }
-    public function galeri()
-    {
-        $datagaleri = galeri::latest();
-        return view('frontend.galeri',[
-            'title' => 'Galeri',
-            'datagaleri' => $datagaleri->paginate(8)->withQueryString(),
+            'dataartikel' => artikel::find(1)
         ]);
     }
 
@@ -81,6 +72,12 @@ class HomeController extends Controller
         return view('frontend.showartikel',[
             'title' => 'Show Artikel',
             'artikel' => $artikel
+        ]);
+    }
+    public function showproduct(product $product){
+        return view('frontend.showproduct',[
+            'title' => 'Show Product',
+            'product' => $product
         ]);
     }
 }

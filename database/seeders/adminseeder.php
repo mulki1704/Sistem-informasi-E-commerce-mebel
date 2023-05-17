@@ -2,9 +2,7 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use DB;
 
 class adminseeder extends Seeder
 {
@@ -17,14 +15,13 @@ class adminseeder extends Seeder
     {
         //admin
         $admin = new \App\Models\User();
-        $admin->name = "Wanda Nugraha";
-        $admin->username = "A W A N 1 0 7";
-        $admin->email = "wandanugraha@gmail.com";
+        $admin->name = "mulki";
+        $admin->username = "M U L K A Y";
+        $admin->email = "mulki1704@gmail.com";
         $admin->password = bcrypt('12345678');
         $admin->role = "admin";
         $admin->image = "{{asset('ASET/x1/profile.png')}}";
         $admin->save();
-
 
     }
 }

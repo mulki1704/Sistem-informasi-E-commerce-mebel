@@ -30,7 +30,7 @@
 .button-solid{
     display: inline-block;
     color: #ffffff;
-    background: #009900;
+    background: #755207;
     text-decoration: none;
     text-transform: uppercase;
     padding: 5px 10px;
@@ -40,19 +40,19 @@
 }
 
 .button-solid:hover{
-    background: #008000;
+    background: #755207;
     color: white;
     box-shadow: 0 0 15px rgba(117, 117, 117, 0.719);
     text-align: center;
 }
 
 .bg-green{
-    background: #009900;
+    background: #755207;
     color: #ffffff;
 }
 
 .text-green{
-    color: #009900;
+    color: #755207;
 }
 
 .layout-fixed.sidebar-collapse .hide-on-collapse {
@@ -112,7 +112,7 @@
   }
 
   .bg-header{
-    background-color: #009900;
+    background-color: #755207;
     background-size: cover;
     height: 250px;
   }

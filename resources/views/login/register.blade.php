@@ -22,7 +22,7 @@
                         <form action="/register" method="post" enctype="multipart/form-data">
                             @csrf
                             <div class="d-flex justify-content-center align-items-center">
-                                <span class="h1 mb-4">Tropisanimal</span>
+                                <span class="h1 mb-4">mebelid</span>
                             </div>
 
                             <h5 class="fw-normal mb-0 pb-3" style="letter-spacing: 1px;">Register Your Account
@@ -99,7 +99,7 @@
                             </div>
 
                             <div class="pt-1 mb-4">
-                                <button class="btn btn-lg btn-block" style="background-color: #009900; color:white;"
+                                <button class="btn btn-lg btn-block" style="background-color: #755207; color:white;"
                                     type="submit">Login<i class="bi bi-box-arrow-in-right"></i></button>
                             </div>
 

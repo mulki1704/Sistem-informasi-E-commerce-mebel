@@ -32,8 +32,8 @@
                         </div>
                         <div class="mb-3">
                             <div class="d-grid gap-2">
-                                <a href="/dashboard/kontak" class="button-solid btn btn-lg btn-block"
-                                    style="--clr:#009900" type="submit">Kembali</a>
+                               <a href="/dashboard/kontaks" class="button-solid btn btn-lg btn-block" style="--clr:#755207"
+                            type="submit">Kembali</a>
                             </div>
                         </div>
                     </div>

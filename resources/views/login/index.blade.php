@@ -2,7 +2,7 @@
 
 @section('konten')
 
-<section class="vh-100" style="background-size: cover; background-image: url('ASET/x1/bg.png') ;">
+<section class="vh-100" style="background-size: cover; background-image: url('ASET/kayu/backgroun.webp') ;">
 
     <div class="container mb-5 py-5">
         <div class="row d-flex justify-content-center align-items-center pb-5 py-5">
@@ -29,7 +29,7 @@
                         <form action="/login" method="post">
                             @csrf
                             <div class="d-flex justify-content-center align-items-center">
-                                <span class="h1 mb-4">Tropisanimal</span>
+                                <span class="h1 mb-4">Login Admin Mebel</span>
                             </div>
 
                             <h5 class="fw-normal mb-0 pb-3" style="letter-spacing: 1px;">Log in Your Account
@@ -61,7 +61,7 @@
                             </div>
 
                             <div class="pt-1 mb-4">
-                                <button class="btn btn-lg btn-block" style="background-color: #009900; color:white;"
+                                <button class="btn btn-lg btn-block" style="background-color: #755207; color:white;"
                                     type="submit">Login<i class="bi bi-box-arrow-in-right"></i></button>
                             </div>
 
