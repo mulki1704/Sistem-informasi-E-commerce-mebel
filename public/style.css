@@ -216,8 +216,8 @@ a,
 
 .btn-success {
     color: #fff;
-    background-color: #1ed085;
-    border-color: #1ed085;
+    background-color: #755207;
+    border-color: #755207;
 }
 
 ul {
@@ -260,7 +260,7 @@ a.btn {
 }
 
 .green_bg2 {
-    background: #1ed085;
+    background: #755207;
 }
 
 .purple_bg {
@@ -969,7 +969,7 @@ a[data-toggle="collapse"] {
 .online_animation {
     width: 12px;
     height: 12px;
-    background: #1ed085;
+    background: #755207;
     border-radius: 100%;
     margin-top: 0;
     position: relative;
@@ -1003,7 +1003,7 @@ a[data-toggle="collapse"] {
 .user_info p {
     font-size: 13px;
     font-weight: 500;
-    color: #1ed085;
+    color: #755207;
     margin: 0;
 }
 
@@ -1330,7 +1330,7 @@ a[data-toggle="collapse"] {
 }
 
 .progress.skill-bar .progress-bar {
-    background-color: #1ed085;
+    background-color: #755207;
     box-shadow: inset 0 -2px 0 rgba(0, 0, 0, .15);
 }
 
@@ -1597,7 +1597,7 @@ a[data-toggle="collapse"] {
     text-align: center;
     padding-bottom: 5px;
     font-size: 14px;
-    color: #1ed085;
+    color: #755207;
     font-weight: 500;
     line-height: 14px;
 }
@@ -1705,7 +1705,7 @@ a[data-toggle="collapse"] {
 }
 
 .plus_green_bt a {
-    background: #1ed085;
+    background: #755207;
     color: #fff;
     width: 45px;
     height: 45px;
@@ -1747,7 +1747,7 @@ a[data-toggle="collapse"] {
     min-width: 125px;
     height: auto;
     float: left;
-    background: #1ed085;
+    background: #755207;
     text-align: center;
     color: #fff;
     padding: 10px 25px;
@@ -1797,7 +1797,7 @@ button.main_bt {
 }
 
 .task_list li:nth-child(5) {
-    border-left-color: #1ed085;
+    border-left-color: #755207;
 }
 
 .msg_list li:nth-child(1) {
@@ -1817,7 +1817,7 @@ button.main_bt {
 }
 
 .msg_list li:nth-child(5) {
-    border-left-color: #1ed085;
+    border-left-color: #755207;
 }
 
 .task_list_main {
@@ -2064,7 +2064,7 @@ button.main_bt {
     border: none;
     color: #fff;
     text-align: center;
-    background: #1ed085;
+    background: #755207;
     font-size: 21px;
     padding: 15px 0;
 }
@@ -2232,9 +2232,9 @@ i.icon {
 /** pagination **/
 
 .pagination .btn {
-    background: #1ed085;
+    background: #755207;
     color: #fff;
-    border-color: #1ed085;
+    border-color: #755207;
     width: 45px;
     height: 40px;
     font-size: 14px;
@@ -2276,7 +2276,7 @@ i.icon {
 }
 
 .heading_section {
-    border-top: solid #1ed085 2px;
+    border-top: solid #755207 2px;
     background: #15283c;
 }
 
@@ -2316,7 +2316,7 @@ i.icon {
 
 .fontawesome-icons-list .fw_icon a:hover,
 .fontawesome-icons-list .fw_icon a:focus {
-    background-color: #1ed085;
+    background-color: #755207;
     color: #fff;
     text-decoration: none;
     transform: scale(1.1);
@@ -2449,10 +2449,10 @@ h2.invoice_head small {
 p.note_cont {
     float: left;
     width: 100%;
-    border: solid #1ed085 1px;
+    border: solid #755207 1px;
     padding: 11px 20px;
     border-radius: 3px;
-    color: #1ed085;
+    color: #755207;
     background: rgba(30, 208, 133, 0.05);
     margin-top: 15px;
 }
@@ -2528,7 +2528,7 @@ p.note_cont {
 }
 
 .user-head .user-name span a {
-    color: #1ed085;
+    color: #755207;
     font-size: 13px;
 }
 
@@ -2554,7 +2554,7 @@ a.mail-dropdown {
 }
 
 .btn-compose {
-    background: #1ed085;
+    background: #755207;
     color: #fff;
     padding: 12px 0;
     text-align: center;
@@ -2589,7 +2589,7 @@ ul.labels-category li {
 }
 
 ul.labels-category li a:hover {
-    color: #1ed085;
+    color: #755207;
 }
 
 .inbox-divider {
@@ -2784,8 +2784,8 @@ ul.inbox-pagination li {
 }
 
 .inbox-pagination a.np-btn {
-    background: #1ed085;
-    border: 1px solid #1ed085;
+    background: #755207;
+    border: 1px solid #755207;
     border-radius: 0;
     color: #fff;
     display: inline-block;
@@ -2945,7 +2945,7 @@ ul.inbox-pagination li {
 
 .table-hover tbody tr:hover,
 .table-hover tbody tr:focus {
-    background-color: #1ed085 !important;
+    background-color: #755207 !important;
     color: #fff;
 }
 
@@ -3210,7 +3210,7 @@ td ul.list-inline li {
 -------------------------------------------------------------------*/
 
 .progress-bar {
-    background-color: #1ed085;
+    background-color: #755207;
     box-shadow: inset 0 -2px 0 rgba(0, 0, 0, .15);
 }
 
@@ -3224,7 +3224,7 @@ td ul.list-inline li {
 }
 
 .projects .btn.btn-success {
-    background: #1ed085;
+    background: #755207;
     color: #fff;
     font-size: 12px;
     border: none;

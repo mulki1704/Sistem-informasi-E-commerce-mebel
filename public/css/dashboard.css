@@ -116,3 +116,112 @@
     background-size: cover;
     height: 250px;
   }
+
+  .border-left-gold {
+    border-left: .25rem solid #755207 !important;
+  }
+
+  .text-gold {
+    color: #755207 !important;
+  }
+
+  .dashboard-card-icon {
+    width: 55px;
+    height: 55px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    background: rgba(117, 82, 7, 0.1);
+    color: #755207;
+  }
+
+  /* Override Bootstrap "success" colors to brown used in this theme */
+  .btn-success {
+    color: #fff !important;
+    background-color: #755207 !important;
+    border-color: #755207 !important;
+  }
+  .btn-success:hover,
+  .btn-success:focus,
+  .btn-success:active,
+  .btn-success.active {
+    background-color: #5f4105 !important; /* slightly darker */
+    border-color: #5f4105 !important;
+    box-shadow: none !important;
+  }
+  .bg-success {
+    background-color: #755207 !important;
+    color: #fff !important;
+  }
+  .text-success {
+    color: #755207 !important;
+  }
+  .badge-success {
+    background-color: #755207 !important;
+    color: #fff !important;
+  }
+
+  /* ensure links/icons using text-success inherit the brown */
+  .text-success a,
+  .text-success i {
+    color: inherit !important;
+  }
+
+  /* Ensure UI libraries using "success/green" variables follow site brown */
+  :root {
+    --green: #755207;
+    --success: #755207;
+  }
+
+  /* Select2 (bootstrap4 theme) highlighted option */
+  .select2-container--bootstrap4 .select2-selection.is-valid,
+  .select2-container--default .select2-success .select2-results__option--highlighted,
+  .select2-success .select2-container--default .select2-results__option--highlighted {
+    border-color: #755207 !important;
+    background-color: #755207 !important;
+    color: #fff !important;
+  }
+
+  /* SweetAlert success styling */
+  .swal2-popup.swal2-toast .swal2-success,
+  .swal2-popup .swal2-success {
+    border-color: #755207 !important;
+  }
+  .swal2-success .swal2-success-circular-line-left,
+  .swal2-success .swal2-success-circular-line-right {
+    background: #755207 !important;
+  }
+
+  /* DataTables SearchBuilder and other plugin pieces that use green */
+  .dtsb-criteria select.dtsb-condition,
+  .searchBuilder .dtsb-criteria select.dtsb-condition {
+    border-color: #755207 !important;
+  }
+
+  /* Ensure any direct uses of Bootstrap's --bs-success or similar are overridden */
+  .bg-success, .btn-success, .text-success, .badge-success {
+    --bs-bg-opacity: 1 !important;
+    background-color: #755207 !important;
+    border-color: #755207 !important;
+    color: #fff !important;
+  }
+
+  /* Outline success buttons (e.g., "Lihat Semua Produk") */
+  .btn-outline-success {
+    color: #755207 !important;
+    border-color: #755207 !important;
+    background-color: transparent !important;
+  }
+  .btn-outline-success:hover,
+  .btn-outline-success:focus {
+    color: #fff !important;
+    background-color: #755207 !important;
+    border-color: #755207 !important;
+  }
+
+  /* Ensure full-width success buttons keep brown background */
+  .btn-success.w-100 {
+    background-color: #755207 !important;
+    border-color: #755207 !important;
+  }

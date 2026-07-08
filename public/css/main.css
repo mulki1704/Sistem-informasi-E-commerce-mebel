@@ -120,6 +120,31 @@ h1 {
     z-index: 100;
 }
 
+.home-hero {
+    padding: 3rem 0;
+}
+
+.home-search .form-control {
+    border-right: 0;
+}
+
+.home-search .btn {
+    min-width: 60px;
+}
+
+.product-card .card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card .card-text {
+    flex-grow: 1;
+}
+
+..product-card .btn {
+    margin-top: auto;
+}
+
 .circle{
     width: 60px;
     height: 60px;

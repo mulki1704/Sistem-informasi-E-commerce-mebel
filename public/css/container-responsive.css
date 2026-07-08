@@ -72,6 +72,38 @@
     padding-right: 135px;
 }
 
+.footer-full {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    background: #111;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.footer-full .footer-col {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.footer-full h5 {
+    font-size: 1.05rem;
+    letter-spacing: 0.04em;
+}
+
+.footer-full a {
+    color: #f8f9fa;
+}
+
+.footer-full p,
+.footer-full a,
+.footer-full h5 {
+    margin-bottom: 0.75rem;
+}
+
 .pt-small-1{
     padding-top: 0px;
 }

@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Http\Controllers;
 
 use App\Models\Product;
@@ -17,7 +16,7 @@ class Productcontroller extends Controller
     {
         $products = Product::All();
         return view('backend.product.index', [
-            'title' => 'Product',
+            'title'    => 'Product',
             'products' => $products,
         ]);
     }
@@ -31,7 +30,7 @@ class Productcontroller extends Controller
         }
 
         return view('frontend.product', [
-            'title' => 'Product',
+            'title'    => 'Product',
             'products' => $products->paginate(6)->withQueryString(),
         ]);
     }
@@ -58,20 +57,21 @@ class Productcontroller extends Controller
     {
 
         $data = $request->validate([
-            'nama' => 'required',
+            'nama'      => 'required',
             'deskripsi' => 'required',
-            'status' => 'required',
-            'harga' => 'required',
-            'image' => 'required|image|file|max:1024',
+            'status'    => 'required',
+            'harga'     => 'required',
+            'image'     => 'required|image|file|max:1024',
 
         ]);
 
-        $product = new Product();
+        $product       = new Product();
         $product->nama = $request->nama;
-        $product->image = $request->file('image')->store('product-images');
+        // simpan file di disk 'public' sehingga dapat diakses via asset('storage/...')
+        $product->image     = $request->file('image')->store('product-images', 'public');
         $product->deskripsi = $request->deskripsi;
-        $product->harga = $request->harga;
-        $product->status = $request->status;
+        $product->harga     = $request->harga;
+        $product->status    = $request->status;
         $product->save();
 
         return redirect()->route('product.index')->with('success', 'data created successfully!!');
@@ -117,25 +117,26 @@ class Productcontroller extends Controller
     public function update(Request $request, $id)
     {
         $data = $request->validate([
-            'nama' => 'required',
-            'status' => 'required',
+            'nama'      => 'required',
+            'status'    => 'required',
             'deskripsi' => 'required',
-            'harga' => 'required',
-            'image' => 'image|file|max:1024',
+            'harga'     => 'required',
+            'image'     => 'image|file|max:1024',
 
         ]);
 
-        $product = Product::findOrFail($id);
+        $product       = Product::findOrFail($id);
         $product->nama = $request->nama;
         if ($request->file('image')) {
             if ($request->oldimage) {
-                Storage::delete($request->oldimage);
+                // hapus dari disk 'public'
+                Storage::disk('public')->delete($request->oldimage);
             }
-            $product->image = $request->file('image')->store('product-images');
+            $product->image = $request->file('image')->store('product-images', 'public');
         }
-        $product->status = $request->status;
+        $product->status    = $request->status;
         $product->deskripsi = $request->deskripsi;
-        $product->harga = $request->harga;
+        $product->harga     = $request->harga;
         $product->save();
 
         return redirect('/dashboard/product')->with('success', 'data edited successfully!!');
@@ -152,7 +153,8 @@ class Productcontroller extends Controller
     {
         $product = Product::findOrFail($id);
         if ($product->image) {
-            Storage::delete($product->image);
+            // hapus dari disk 'public'
+            Storage::disk('public')->delete($product->image);
         }
         $product->delete();
         return back();
