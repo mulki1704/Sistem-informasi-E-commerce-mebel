@@ -19,6 +19,11 @@ class Product extends Model
         ];
     }
 
+    public function orders()
+    {
+        return $this->hasMany(Order::class);
+    }
+
     public function getImageUrlAttribute(): string
     {
         if (empty($this->image)) {

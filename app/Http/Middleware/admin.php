@@ -1,10 +1,9 @@
 <?php
-
 namespace App\Http\Middleware;
 
+use Auth;
 use Closure;
 use Illuminate\Http\Request;
-use Auth;
 
 class admin
 {
@@ -17,13 +16,10 @@ class admin
      */
     public function handle(Request $request, Closure $next)
     {
-
-        if(Auth::check( )){
+        if (Auth::check() && Auth::user()->role === 'admin') {
             return $next($request);
         }
 
-        return redirect('/');
-
-        
+        return redirect('/dashboard');
     }
 }

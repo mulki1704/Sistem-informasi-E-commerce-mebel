@@ -22,13 +22,13 @@
 
                     <div class="card shadow" style="border-radius: 1rem;">
                         <div class="card-body p-4 p-lg-5 text-black">
-                            <form action="/login" method="post">
+                            <form action="{{ route('admin.login.submit') }}" method="post">
                                 @csrf
                                 <div class="d-flex justify-content-center align-items-center">
-                                    <span class="h1 mb-4">Login Mebel</span>
+                                    <span class="h1 mb-4">Login Admin</span>
                                 </div>
 
-                                <h5 class="fw-normal mb-0 pb-3" style="letter-spacing: 1px;">Masuk ke akun Anda</h5>
+                                <h5 class="fw-normal mb-0 pb-3" style="letter-spacing: 1px;">Masuk sebagai admin</h5>
 
                                 <div class="form-outline mb-4 form-floating">
                                     <input type="email" id="email" placeholder="Email" name="email"
@@ -53,14 +53,8 @@
                                 <div class="pt-1 mb-4">
                                     <button class="btn btn-lg btn-block" style="background-color: #755207; color:white;"
                                         type="submit">
-                                        Login <i class="bi bi-box-arrow-in-right"></i>
+                                        Login Admin <i class="bi bi-box-arrow-in-right"></i>
                                     </button>
-                                </div>
-
-                                <div class="text-center">
-                                    <p class="mb-2">Belum punya akun?</p>
-                                    <a href="{{ route('register') }}" class="btn btn-outline-secondary btn-sm">Daftar
-                                        Sekarang</a>
                                 </div>
                             </form>
                         </div>

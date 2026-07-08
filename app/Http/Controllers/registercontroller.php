@@ -1,35 +1,33 @@
 <?php
-
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Models\User;
+use Illuminate\Http\Request;
 
 class registercontroller extends Controller
 {
-    //
-    public function index(){
-        return view('login.register',[
-            'title' => 'Register'
+    public function index()
+    {
+        return view('login.register', [
+            'title' => 'Register',
         ]);
     }
 
     public function store(Request $request)
     {
         $validatedData = $request->validate([
-            'name' => 'required|max:255',
-            'role' => '',
             'username' => 'required|min:3|max:255|unique:users',
-            'email' => 'required|email:dns|unique:users',
+            'email'    => 'required|email|unique:users',
             'password' => 'required|min:8|max:255',
-            'image' => 'image|file|max:1024'
         ]);
 
+        $validatedData['name']     = $validatedData['username'];
+        $validatedData['role']     = 'user';
         $validatedData['password'] = bcrypt($validatedData['password']);
-        $validatedData['image'] = $request->file('image')->store('admin-image'); 
+        $validatedData['image']    = 'users/default.png';
 
         User::create($validatedData);
-        return redirect('/login')->with('success', 'Registration successful! Please login');
 
+        return redirect('/login')->with('success', 'Registrasi berhasil, silakan login.');
     }
 }

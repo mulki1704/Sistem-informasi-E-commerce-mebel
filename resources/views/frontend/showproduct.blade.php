@@ -32,12 +32,21 @@
                                 {!! $product->deskripsi !!}
                                 <br>
                                 @if ($product->status == 'Tersedia')
-                                    <button class="btn btn-success"><a href="https://wa.me/+6282121397948"
-                                            style="text-decoration: none;color:white"><i class="bi bi-whatsapp"></i></i>
-                                            Order Via Whatsapp</a></button>
+                                    @auth
+                                        <a href="{{ route('orders.create', $product) }}" class="btn btn-success mt-2">
+                                            <i class="bi bi-cart-plus"></i> Pesan Sekarang
+                                        </a>
+                                    @else
+                                        <a href="{{ url('/login') }}" class="btn btn-success mt-2">
+                                            <i class="bi bi-cart-plus"></i> Login untuk Pesan
+                                        </a>
+                                    @endauth
+                                    <a href="https://wa.me/+6282121397948" class="btn btn-outline-success mt-2"
+                                        style="text-decoration: none;color:inherit">
+                                        <i class="bi bi-whatsapp"></i> Order Via Whatsapp
+                                    </a>
                                 @else
-                                    {{-- <button disabled class="btn btn-success"><a href="https://wa.me/+6282121397948"
-                                        style="text-decoration: none;color:white"><i class="bi bi-whatsapp"></i></i> Order Via Whatsapp</a></button> --}}
+                                    <button disabled class="btn btn-secondary mt-2">Produk Tidak Tersedia</button>
                                 @endif
                             </div>
                         </div>
