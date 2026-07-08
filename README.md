@@ -1,66 +1,125 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+﻿# Mebel.id
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Mebel.id adalah aplikasi web berbasis Laravel yang dibuat untuk mempromosikan dan mengelola informasi seputar bisnis mebel. Aplikasi ini menampilkan halaman publik tentang perusahaan, artikel, berita, produk, serta formulir kontak, dan juga menyediakan panel admin untuk mengelola konten.
 
-## About Laravel
+## Judul Aplikasi
+Mebel.id
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Deskripsi Singkat Aplikasi
+Aplikasi ini dibuat sebagai website informasi dan katalog sederhana untuk usaha mebel. Pengunjung dapat melihat profil perusahaan, membaca artikel dan berita, melihat produk yang tersedia, serta mengirimkan pesan melalui halaman kontak. Sementara itu, admin dapat mengelola data artikel, berita, produk, kontak, dan visi misi melalui dashboard.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Frontend
+Frontend adalah bagian tampilan yang dilihat oleh pengguna. Pada aplikasi ini, frontend dibuat dengan Blade template engine dan layout yang berada di folder resources/views.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Fitur frontend yang tersedia meliputi:
+- Halaman utama
+- Halaman artikel
+- Halaman berita
+- Halaman produk
+- Halaman kontak
+- Halaman login admin
 
-## Learning Laravel
+## Backend
+Backend adalah bagian yang mengatur logika aplikasi, routing, autentikasi, dan pengolahan data. Pada aplikasi ini, backend dibangun dengan Laravel dan mencakup:
+- Routing di routes/web.php
+- Controller di app/Http/Controllers
+- Model dan query data di app/Models
+- Database migrations di database/migrations
+- Sistem login admin dan dashboard
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Fitur backend yang tersedia meliputi:
+- CRUD artikel
+- CRUD berita
+- CRUD produk
+- CRUD kontak
+- CRUD visi dan misi
+- Login/logout admin
+- Dashboard admin
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## Persyaratan Lokal
+Pastikan perangkat Anda sudah memiliki:
+- PHP 8.1 atau lebih tinggi
+- Composer
+- Node.js dan npm
+- MySQL
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Panduan Menjalankan Aplikasi di Lokal
 
-## Laravel Sponsors
+### 1. Masuk ke folder project
+```bash
+cd c:\xampp\htdocs\mebel
+```
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+### 2. Install dependency PHP
+```bash
+composer install
+```
 
-### Premium Partners
+### 3. Siapkan file environment
+Salin file contoh environment:
+```bash
+copy .env.example .env
+```
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+Lalu ubah konfigurasi database di file .env sesuai database lokal Anda, misalnya:
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=mebel
+DB_USERNAME=root
+DB_PASSWORD=
+```
 
-## Contributing
+### 4. Generate aplikasi key
+```bash
+php artisan key:generate
+```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### 5. Jalankan migrasi dan seeder
+```bash
+php artisan migrate --seed
+```
 
-## Code of Conduct
+### 6. Buat link storage agar gambar tampil
+```bash
+php artisan storage:link
+```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### 7. Install dependency frontend
+```bash
+npm install
+```
 
-## Security Vulnerabilities
+### 8. Jalankan backend
+```bash
+php artisan serve
+```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Aplikasi akan tersedia di:
+```text
+http://127.0.0.1:8000
+```
 
-## License
+### 9. Jalankan frontend assets (Vite)
+Buka terminal baru lalu jalankan:
+```bash
+npm run dev
+```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### 10. Akses halaman admin
+Buka halaman login di:
+```text
+http://127.0.0.1:8000/login
+```
+
+Jika menggunakan data seeder, akun admin default biasanya:
+- Email: mulki1704@gmail.com
+- Password: 12345678
+
+## Catatan Tambahan
+- Jika gambar tidak muncul, pastikan perintah storage:link sudah dijalankan.
+- Untuk build versi produksi frontend, jalankan:
+```bash
+npm run build
+```
