@@ -17,12 +17,12 @@ Frontend adalah bagian tampilan yang dilihat oleh pengguna. Pada aplikasi ini, f
 Fitur frontend yang tersedia meliputi:
 
 - Halaman utama
-- Halaman artikel
+- Halaman artikel (tentang kami)
 - Halaman berita
 - Halaman produk
 - Halaman kontak
-- Halaman login - logout
 - Halaman riwayat pesanan pengguna
+- Halaman login - logout
 
 ## Backend
 
